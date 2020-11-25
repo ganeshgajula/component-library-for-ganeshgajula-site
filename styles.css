@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 :root {
-  --primary-color: #fbbf24;
+  --primary-color: #f59e0b;
 }
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+hr {
+  margin: 2rem 0;
 }
 
 /* container */
