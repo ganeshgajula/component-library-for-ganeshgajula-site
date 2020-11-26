@@ -2,6 +2,8 @@
 
 :root {
   --primary-color: #fbbf24;
+  --off-white: #f3f4f6;
+  --dark-gray: #6b7280;
 }
 
 body {
@@ -75,4 +77,41 @@ hr {
 
 .navigation .link-active {
   font-weight: bold;
+}
+
+/* header */
+
+.hero {
+  padding: 2rem;
+}
+
+.hero .hero-img {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.hero .hero-heading {
+  /* font-size: 2rem; */
+  color: var(--dark-gray);
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.hero .hero-heading .heading-inverted {
+  color: var(--primary-color);
+}
+
+/* sections */
+
+.section {
+  padding: 2rem;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.ow {
+  background-color: var(--off-white);
 }
