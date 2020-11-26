@@ -1,7 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 :root {
-  --primary-color: #fbbf24;
+  --primary-color: #1d4ed8;
   --off-white: #f3f4f6;
   --dark-gray: #6b7280;
 }
@@ -62,6 +62,13 @@ hr {
   color: white;
   padding: 1rem;
   border-bottom-left-radius: 1rem;
+}
+
+.nav-container {
+  margin: auto;
+  max-width: 1100px;
+  /* overflow: auto;
+  padding: 0 20px; */
 }
 
 .navigation .nav-brand {
