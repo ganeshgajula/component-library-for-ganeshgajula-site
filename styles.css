@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 :root {
   --primary-color: #fbbf24;
   --off-white: #f3f4f6;
@@ -7,7 +7,9 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
 }
 
 hr {
@@ -114,4 +116,22 @@ hr {
 
 .ow {
   background-color: var(--off-white);
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+}
+
+.footer .link {
+  color: white;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
 }
