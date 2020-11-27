@@ -25,12 +25,27 @@ hr {
 .container-center {
   max-width: 600px;
   margin: auto;
+  text-align: center;
 }
 
 .flex-container {
   display: flex;
   max-width: 1100px;
   margin: auto;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  height: 50vh;
+  margin: auto;
+}
+
+.projects-container .hero-img {
+  max-height: 350px;
 }
 
 /* Links */
@@ -134,6 +149,12 @@ hr {
   padding: 1.5rem 2rem 2rem 2rem;
   height: 70vh;
 }
+
+/* .hero-secondary h1,
+h2,
+ul {
+  text-align: center;
+} */
 
 .hero-secondary .hero-img {
   max-width: 450px;
@@ -241,6 +262,11 @@ hr {
   color: var(--black-color);
 }
 
+/* .section-projects h2,
+p {
+  text-align: center;
+} */
+
 .section-blogs h1 {
   font-size: 2rem;
   color: var(--black-color);
@@ -256,6 +282,7 @@ hr {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
+  margin-right: 2rem;
 }
 
 .btn-container {
