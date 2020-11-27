@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Blogs | Ganesh Gajula</title>
+  </head>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a class="link" href="index.html">NEOCODER</a>
+        </div>
+        <ul class="list-non-bullet nav-pills">
+          <li class="list-item-inline">
+            <a class="link" href="/">Home</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="/projects.html">Projects</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link link-active" href="/blogs.html">Blogs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <header>
+        <h1 class="blog-heading">CSS for beginners</h1>
+        <div>
+          <img
+            class="blog-cover-img"
+            src="/images/blog2-cover.jpeg"
+            alt="js keywords"
+          />
+        </div>
+      </header>
+
+      <section class="blog-content">
+        <div class="blog-container">
+          <p>
+            CSS defines the way things look on a website and to further add
+            interactivity to a website we use JavaScript. When we start building
+            any website we usually start by writing HTML first, which is the
+            actual content that is being displayed on the website. But, we also
+            need to style our website so that it catches the attention of the
+            person visiting the website. This is where CSS comes into action.
+          </p>
+          <p>
+            CSS stands for <strong>Cascading Style Sheets</strong> and is a very
+            powerful tool for designing our website. It can instantly beautify a
+            website to a whole new level. So in this post I'll walk you all
+            through the basics of CSS to introducing all the things you need to
+            know to style your website.
+          </p>
+          <p>So first lets look at the syntax.</p>
+          <h2>SYNTAX</h2>
+          <p>
+            CSS consists of a <strong>selector</strong> and a
+            <strong>declaration block</strong>. The selector points to the HTML
+            element which we want to style whereas the declaration block
+            contains one or more declarations separated by semicolons. The
+            declaration consists of a CSS property name and a value separated by
+            a colon. See the image below
+          </p>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet1.png" alt="" />
+          </div>
+
+          <p>
+            In the above image we can see that p tag is a selector and
+            everything that's inside the curly braces is declaration which
+            consists of color as a property and red as a value. On using the
+            above styling into our CSS file will convert all the content
+            enclosed within the p tag into red color.
+          </p>
+          <h2>SELECTORS</h2>
+
+          <p>
+            Selectors in CSS specify which HTML elements we want to style. For
+            example, when we write h1 as a selector and then assign a
+            declaration to it which consists of a property and value. Then all
+            the h1's which are present in our html file are being modified based
+            on property and value.
+          </p>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet2.png" alt="" />
+          </div>
+          <p>
+            We can also use multiple selectors separated by a comma and then
+            assigning a declaration which will make an effect on all of them at
+            once. See the code snippet below.
+          </p>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet3.png" alt="" />
+          </div>
+          <h2>PROPERTIES</h2>
+          <p>
+            So now lets explore the properties in CSS which are most important
+            to style our website. Based on the properties used, the styles are
+            being applied to that particular selector. Some of the most used
+            properties are:
+          </p>
+          <h3>COLOR</h3>
+          <p>
+            In CSS, by using the color property and assigning it to a predefined
+            color we can change the color of the content enclosed in that
+            particular selector.
+          </p>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet4.png" alt="" />
+          </div>
+          <ol class="blog-ordered-list">
+            <li><strong>By Specifying the RGB value of the color. </strong></li>
+            <li><strong>By Specifying the HEX value of the color. </strong></li>
+          </ol>
+          <h4>1. RGB Value</h4>
+          <p>
+            An RGB value is a combination of 3 values i.e red, green & blue.
+            Here, each parameter defines the intensity of the color between 0
+            and 255.
+          </p>
+          <p>
+            If we set all the parameters to 0 i.e. by setting rgb(0,0,0) we get
+            black color. While if we set all the parameters to 255 i.e. by
+            setting rgb(255,255,255) we get white color. Also, setting any one
+            parameter to 255 and rest all to 0 will give us the color of the
+            parameter that is being set to 255. For example. rgb(255,0,0) will
+            give us red.
+          </p>
+          <p>
+            To read more about setting RGB values
+            <a href="https://www.w3schools.com/css/css_colors_rgb.asp"
+              >Click Here</a
+            >
+          </p>
+
+          <h4>2. HEX Value</h4>
+
+          <p>
+            Similar to rgb, an HEX value is also a combination of 3 values i.e.
+            red, green & blue but in hexadecimal format which is #rrggbb. Here,
+            rr refers to red, gg refers to green & bb refers to blue with their
+            values ranging between 00 and ff, ff being the highest and 00 being
+            the lowest. For example. hex(#ff0000) will give a red color.
+          </p>
+          <h3>TEXT</h3>
+          <p>
+            Using CSS we can also style our text, we can change the font size,
+            font style, add spacing between the words & letters and many more
+            stuff. We can use different font styles based on our requirement,
+            some of the best font styles can be found at
+            <a href="https://fonts.google.com/">Google Fonts</a>
+          </p>
+
+          <p>
+            For font sizes we can use pixels(px), rem , em units. rem is
+            relative to font-size of the root element, em is relative to the
+            font-size of the element. If size of the root element is not set
+            then by default it is 16px. To read more
+            <a href="https://www.w3schools.com/cssref/css_units.asp"
+              >Click Here</a
+            >
+          </p>
+          <h2>CSS BOX MODEL</h2>
+          <p>
+            The CSS box model is like a box which is wrapped around each & every
+            HTML element. It mainly consists of margins, borders, padding &
+            actual content.
+          </p>
+          <h4>See the diagram below:</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet5.png" alt="" />
+          </div>
+          <p>
+            In the above image, we can see that to add the spacing around the
+            actual content we need to use padding, and to add a spacing around
+            the padding and the content we need to use border spacing, and
+            finally to add the spacing outside the element i.e. to add spacing
+            between two elements we use margin. Also, we can use margin: auto to
+            center the elements.
+          </p>
+          <h2>DISPLAY</h2>
+          <p>
+            The CSS display property is widely used to control the layouts. It
+            specifies how an element must be displayed. Elements usually have
+            their default display values set to either inline or block.
+          </p>
+          <h3>Inline Elements</h3>
+
+          <p>
+            We can set the display property to inline by declaring display:
+            inline. Inline removes the line breaks after an element due to which
+            each element occupies the space equivalent to the content or text
+            present inside it. Some of the default inline elements are span, a,
+            img
+          </p>
+          <h4>See the image below.</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet6.png" alt="" />
+          </div>
+          <p>
+            To see entire code
+            <a href="https://codesandbox.io/s/inline-k1hqg?file=/index.html"
+              >Click Here</a
+            >
+          </p>
+
+          <h3>Block Elements</h3>
+          <p>
+            We can set the display property to block by declaring display:
+            block. Elements whose display property is set as block always start
+            on a new line and take the full width available. Two elements won't
+            be placed next to each other. Some of the default block elements
+            are: div, h1 ... h6, p etc.
+          </p>
+          <h4>See the image below:</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet7.png" alt="" />
+          </div>
+          <p>
+            To see entire code
+            <a href="https://codesandbox.io/s/block-6uhq6?file=/index.html"
+              >Click Here</a
+            >
+          </p>
+          <h2>CLASSES & ID's</h2>
+
+          <p>
+            To select a group of elements we use classes and ids in our html.
+            Classes are used when we want to reuse the same class name in other
+            elements as well, while id's are used when we want to assign an id
+            to an element which won't be reused again for other elements.
+          </p>
+          <p>
+            Classes are included in css file using dot and then followed by
+            assigned classname (.className) while ids are included using # and
+            then followed by assigned idName (#idname).
+          </p>
+          <p>
+            Below we have put class as center into two p tags. So, now by using
+            the class name we can style the way we want.
+          </p>
+          <h4>See the code snippet below:</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet8.png" alt="" />
+          </div>
+          <p>
+            So now by using class we can style those two p tags as per our need.
+            Let's align them to center.
+          </p>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet9.png" alt="" />
+          </div>
+          <h4>Output will be</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet10.png" alt="" />
+          </div>
+          <p>
+            So as you can see using class we have centered group of elements
+            together.
+          </p>
+          <p>
+            To see entire code
+            <a href="https://codesandbox.io/s/class-3nce2?file=/index.html"
+              >Click Here</a
+            >
+          </p>
+          <p>Similarly we can do this using ids using #</p>
+          <div class="blog-content-img">
+            <img src="/images/blog2-snippet11.png" alt="" />
+          </div>
+          <p>
+            To see code for ids
+            <a href="https://codesandbox.io/s/id-bwbju?file=/index.html"
+              >Click Here</a
+            >
+          </p>
+          <p>
+            Hope, I was able to cover most of the topics of CSS to get a
+            beginner started, but there's still a lot of topics in CSS to learn
+            if you want to become a pro at it.
+          </p>
+
+          <h3>Some resources which you can look at:</h3>
+          <ol class="blog-ordered-list">
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                >MDN Docs</a
+              >
+            </li>
+            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+            <li>
+              <a href="https://www.w3schools.com/css/default.asp">w3schools</a>
+            </li>
+          </ol>
+          <h3>Thank you !!</h3>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-header">You can connect with me on</div>
+      <div class="social social-icons">
+        <a href="https://www.linkedin.com/in/ganesh-gajula-5ab558170/"
+          ><i class="fab fa-linkedin-in fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/GaneshGajula18"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://github.com/ganeshgajula"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://dev.to/ganeshgajula"
+          ><i class="fab fa-dev fa-2x"></i
+        ></a>
+      </div>
+      <p>&copy; 2020 | NEOCODES</p>
+    </footer>
+  </body>
+</html>

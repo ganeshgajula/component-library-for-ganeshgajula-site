@@ -306,6 +306,10 @@ p {
   line-height: 1.6rem;
 }
 
+.blog-content a {
+  text-decoration: none;
+}
+
 .blog-heading {
   text-align: center;
   font-size: 4rem;
