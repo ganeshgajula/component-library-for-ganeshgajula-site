@@ -232,6 +232,47 @@ hr {
   background-color: var(--off-white);
 }
 
+/* .section .section-projects {
+  height: 20vh;
+} */
+
+.section-projects h1 {
+  font-size: 2rem;
+  color: var(--black-color);
+}
+
+.section-blogs h1 {
+  font-size: 2rem;
+  color: var(--black-color);
+}
+
+/* .section .section-projects p {
+  margin-bottom: 2rem;
+} */
+
+.btn {
+  display: inline-block;
+  margin: 0.5rem auto;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
 /* footer */
 
 .footer {
