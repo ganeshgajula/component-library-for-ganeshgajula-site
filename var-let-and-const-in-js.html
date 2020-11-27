@@ -44,159 +44,168 @@
       </header>
 
       <section class="blog-content">
-        <p>
-          In JavaScript, variable declarations are done using keywords such as
-          <strong>var</strong>, <strong>let</strong> & <strong>const</strong>.
-          var has been around since the beginning of the javascript, while let
-          and const were introduced in ES2015 also called ES6 which was an
-          update to the javascript language that included many new features. let
-          & const have a big advantage when it comes to block level scope.
-        </p>
-        <p>
-          When a variable is declared in JavaScript it can have either function
-          level scope or block level scope based on the keyword used during
-          declaration. Variables declared using var keyword have a
-          <strong>function level scope</strong>, while variables declared using
-          let & const have a <strong>block level scope</strong>.
-        </p>
-        <p>
-          Let's first look at the variable declarations then we'll deeply
-          understand what the function level & block level scope means.
-        </p>
+        <div class="blog-container">
+          <p>
+            In JavaScript, variable declarations are done using keywords such as
+            <strong>var</strong>, <strong>let</strong> & <strong>const</strong>.
+            var has been around since the beginning of the javascript, while let
+            and const were introduced in ES2015 also called ES6 which was an
+            update to the javascript language that included many new features.
+            let & const have a big advantage when it comes to block level scope.
+          </p>
+          <p>
+            When a variable is declared in JavaScript it can have either
+            function level scope or block level scope based on the keyword used
+            during declaration. Variables declared using var keyword have a
+            <strong>function level scope</strong>, while variables declared
+            using let & const have a <strong>block level scope</strong>.
+          </p>
+          <p>
+            Let's first look at the variable declarations then we'll deeply
+            understand what the function level & block level scope means.
+          </p>
 
-        <h2>Variable Declaration</h2>
-        <h3>var</h3>
-        <p>
-          Variable declaration using var keyword is done similar to how we
-          declare variables in other programming languages. Also, once declared
-          the variables can be reassigned to some other value if required.
-        </p>
-        <h4>See the code snippet below:</h4>
-        <div class="blog-content-img">
-          <img src="/images/blog1-snippet1.png" alt="" />
+          <h2>Variable Declaration</h2>
+          <h3>var</h3>
+          <p>
+            Variable declaration using var keyword is done similar to how we
+            declare variables in other programming languages. Also, once
+            declared the variables can be reassigned to some other value if
+            required.
+          </p>
+          <h4>See the code snippet below:</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog1-snippet1.png" alt="" />
+          </div>
+          <h3>let</h3>
+          <p>
+            let works very similar to var, infact it is identical on the global
+            scope, but let have certain advantages when it comes to block level
+            scoping which we'll be seeing in the later sections. We can reassign
+            a variable in let similar to what we have done in var above.
+          </p>
+          <h4>See the code snippet below:</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog1-snippet2.png" alt="" />
+          </div>
+          <h3>const</h3>
+          <p>
+            Variables declared using const keyword are immutable. const works
+            differently as compared to var & let. const stands for constant
+            hence it cannot be changed, once a value is assigned during
+            declaration it cannot be reassigned.
+          </p>
+          <h4>See the code snippet below:</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog1-snippet3.png" alt="" />
+          </div>
+          <p>
+            But when it comes arrays & objects const works little differently.
+            Look at the below code snippet.
+          </p>
+          <div class="blog-content-img">
+            <img src="/images/blog1-snippet4.png" alt="" />
+          </div>
+          <p>
+            Now you might be thinking that as person is constant object then how
+            come we are able to change its properties. This is possible because
+            const keyword creates immutable bindings i.e. we cannot reassign the
+            variable identifier but we can change the properties of an object
+            i.e. the stuff which is inside an object, but we cannot reassign
+            person completely to an entire new object.
+          </p>
+          <h4>Same goes with arrays. See the code snippet below.</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog1-snippet5.png" alt="" />
+          </div>
+          <p>
+            So in the above snippet we are creating a variable numbers using
+            const keyword and assigning it to an array. But, later we are
+            inserting a new value into an array & we can do that as we are just
+            inserting a value to an already assigned array. But we cannot
+            reassign a completely new array, if done it will throw an error
+            which you can see in the snippet above.
+          </p>
+          <p>
+            Now, we have explored all the variable declaration keywords. So it
+            completely depends on developer which keyword to use. But the modern
+            javascript i.e. In ES6, it is generally advised to use let instead
+            of var as there are lot of disadvantages based on its scope level
+            which we'll look now.
+          </p>
+          <h2>There are basically two types of scope level in JavaScript:</h2>
+          <ol class="blog-ordered-list">
+            <li><strong>Function level scope. </strong></li>
+            <li><strong>Block level scope. </strong></li>
+          </ol>
+          <h2>Function Scope</h2>
+          <p>
+            Variables declared using var keyword in JavaScript are functioned
+            scoped i.e. their scope is limited within a function in which it has
+            been declared. Hence, they cannot be accessed outside the function.
+            See the code snippet below.
+          </p>
+          <div class="blog-content-img">
+            <img src="/images/blog1-snippet6.png" alt="" />
+          </div>
+          <p>
+            So, we can see above that variables declared using keyword var
+            inside the function test() are accessible only within that function,
+            if used outside the function then its globally assigned values are
+            being accessed.
+          </p>
+          <h2>Block Scope</h2>
+          <p>
+            Variables declared using let & const keywords in JavaScript are
+            block scoped i.e. their scope is limited within a block in which it
+            has been declared. Hence, they cannot be accessed outside the block.
+            Here, block means an if statement, a loop or anything that's wrapped
+            in a curly braces {}.
+          </p>
+          <h4>See the code snippet below:</h4>
+          <div class="blog-content-img">
+            <img src="/images/blog1-snippet7.png" alt="" />
+          </div>
+          <p>
+            Now notice when we are logging global scope at the very bottom of
+            the code we are getting output as 4 2 3, but initially in the global
+            scope (at the very top) we have defined a = 1 but in the block scope
+            that a variable is redeclared to 4 due to which we are getting value
+            of a as 4 in the global scope.
+          </p>
+          <p>
+            But variables b & c which are declared using keywords let & const
+            are still 2 & 3 (see at the very bottom of the code) even though
+            inside the block scope we have set them to 5 & 6. This is because
+            that's what we initially set them to.
+          </p>
+          <p>
+            So the way let & const works is how most programming languages work,
+            but var is kind of weird due to which let & const were introduced in
+            ES6.
+          </p>
+          <h2>So to sum up</h2>
+          <ol class="blog-ordered-list">
+            <li>
+              Variables declared using var keyword can be redeclared &
+              reassigned at a later stage and its scope is limited within a
+              function.
+            </li>
+            <li>
+              Variables declared using let keyword can be reassigned at a later
+              stage and its scope is limited within a block.
+            </li>
+            <li>
+              Variables declared using const keyword cannot be reassigned at a
+              later stage and its scope is limited within a block.
+            </li>
+          </ol>
+          <p>
+            Hope you liked this article and got all your basic concepts of
+            JavaScript clear. You can drop your feedback on my social channels.
+          </p>
+          <h3>Thank you !!</h3>
         </div>
-        <h3>let</h3>
-        <p>
-          let works very similar to var, infact it is identical on the global
-          scope, but let have certain advantages when it comes to block level
-          scoping which we'll be seeing in the later sections. We can reassign a
-          variable in let similar to what we have done in var above.
-        </p>
-        <h4>See the code snippet below:</h4>
-        <div class="blog-content-img">
-          <img src="/images/blog1-snippet2.png" alt="" />
-        </div>
-        <h3>const</h3>
-        <p>
-          Variables declared using const keyword are immutable. const works
-          differently as compared to var & let. const stands for constant hence
-          it cannot be changed, once a value is assigned during declaration it
-          cannot be reassigned.
-        </p>
-        <h4>See the code snippet below:</h4>
-        <div class="blog-content-img">
-          <img src="/images/blog1-snippet3.png" alt="" />
-        </div>
-        <p>
-          But when it comes arrays & objects const works little differently.
-          Look at the below code snippet.
-        </p>
-        <div class="blog-content-img">
-          <img src="/images/blog1-snippet4.png" alt="" />
-        </div>
-        <p>
-          Now you might be thinking that as person is constant object then how
-          come we are able to change its properties. This is possible because
-          const keyword creates immutable bindings i.e. we cannot reassign the
-          variable identifier but we can change the properties of an object i.e.
-          the stuff which is inside an object, but we cannot reassign person
-          completely to an entire new object.
-        </p>
-        <h4>Same goes with arrays. See the code snippet below.</h4>
-        <div class="blog-content-img">
-          <img src="/images/blog1-snippet5.png" alt="" />
-        </div>
-        <p>
-          So in the above snippet we are creating a variable numbers using const
-          keyword and assigning it to an array. But, later we are inserting a
-          new value into an array & we can do that as we are just inserting a
-          value to an already assigned array. But we cannot reassign a
-          completely new array, if done it will throw an error which you can see
-          in the snippet above.
-        </p>
-        <p>
-          Now, we have explored all the variable declaration keywords. So it
-          completely depends on developer which keyword to use. But the modern
-          javascript i.e. In ES6, it is generally advised to use let instead of
-          var as there are lot of disadvantages based on its scope level which
-          we'll look now.
-        </p>
-        <h2>There are basically two types of scope level in JavaScript:</h2>
-        <ol class="blog-ordered-list">
-          <li><strong>1. Function level scope. </strong></li>
-          <li><strong>2. Block level scope. </strong></li>
-        </ol>
-        <h2>Function Scope</h2>
-        <p>
-          Variables declared using var keyword in JavaScript are functioned
-          scoped i.e. their scope is limited within a function in which it has
-          been declared. Hence, they cannot be accessed outside the function.
-          See the code snippet below.
-        </p>
-        <div class="blog-content-img">
-          <img src="/images/blog1-snippet6.png" alt="" />
-        </div>
-        <p>
-          So, we can see above that variables declared using keyword var inside
-          the function test() are accessible only within that function, if used
-          outside the function then its globally assigned values are being
-          accessed.
-        </p>
-        <h2>Block Scope</h2>
-        <p>
-          Variables declared using let & const keywords in JavaScript are block
-          scoped i.e. their scope is limited within a block in which it has been
-          declared. Hence, they cannot be accessed outside the block. Here,
-          block means an if statement, a loop or anything that's wrapped in a
-          curly braces {}.
-        </p>
-        <h4>See the code snippet below:</h4>
-        <div class="blog-content-img">
-          <img src="/images/blog1-snippet7.png" alt="" />
-        </div>
-        <p>
-          Now notice when we are logging global scope at the very bottom of the
-          code we are getting output as 4 2 3, but initially in the global scope
-          (at the very top) we have defined a = 1 but in the block scope that a
-          variable is redeclared to 4 due to which we are getting value of a as
-          4 in the global scope.
-        </p>
-        <p>
-          But variables b & c which are declared using keywords let & const are
-          still 2 & 3 (see at the very bottom of the code) even though inside
-          the block scope we have set them to 5 & 6. This is because that's what
-          we initially set them to.
-        </p>
-        <p>
-          So the way let & const works is how most programming languages work,
-          but var is kind of weird due to which let & const were introduced in
-          ES6.
-        </p>
-        <h2>So to sum up</h2>
-        <ol class="blog-ordered-list">
-          <li>
-            Variables declared using var keyword can be redeclared & reassigned
-            at a later stage and its scope is limited within a function.
-          </li>
-          <li>
-            Variables declared using let keyword can be reassigned at a later
-            stage and its scope is limited within a block.
-          </li>
-          <li>
-            Variables declared using const keyword cannot be reassigned at a
-            later stage and its scope is limited within a block.
-          </li>
-        </ol>
       </section>
     </main>
 
