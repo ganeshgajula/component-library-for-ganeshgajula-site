@@ -161,6 +161,65 @@ hr {
   font-size: 1.1rem;
 }
 
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.flex-items > div {
+  padding: 5px;
+}
+
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  /* background-color: var(--primary-color); */
+  color: goldenrod;
+  padding: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.icons .fa-html5 {
+  color: #e34c26;
+}
+
+.icons .fa-css3-alt {
+  color: #264de4;
+}
+.icons .fa-js-square {
+  color: #f0db4f;
+}
+.icons .fa-node {
+  color: #68a063;
+}
+.icons .fa-react {
+  color: #61dbfb;
+}
+.icons .fa-git-square {
+  color: #f1502f;
+}
+.icons .fa-github {
+  color: #333;
+}
+.icons .fa-database {
+  color: darkgray;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--black-color);
+}
+
 .section {
   padding: 2rem;
 }
