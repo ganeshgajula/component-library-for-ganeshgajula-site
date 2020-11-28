@@ -125,8 +125,18 @@ hr {
   padding: 5rem 2rem 2rem 2rem;
   height: 70vh;
 }
+.hero-projects {
+  padding: 5rem 2rem 2rem 2rem;
+  height: 70vh;
+}
 
 .hero .hero-img {
+  max-width: 550px;
+}
+.hero-projects .hero-img {
+  max-width: 550px;
+}
+.hero-projects .hero-blog-img {
   max-width: 550px;
 }
 
@@ -136,8 +146,17 @@ hr {
   text-align: center;
   padding-top: 5rem;
 }
+.hero-projects .hero-heading {
+  /* font-size: 2rem; */
+  color: var(--dark-gray);
+  text-align: center;
+  padding-top: 5rem;
+}
 
 .hero .hero-heading .heading-inverted {
+  color: var(--primary-color);
+}
+.hero-projects .hero-heading .heading-inverted {
   color: var(--primary-color);
 }
 
