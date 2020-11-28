@@ -108,7 +108,7 @@ hr {
 }
 
 .navigation .nav-pills .link:hover {
-  color: var(--black-color);
+  font-weight: bold;
 }
 
 .navigation .link {
